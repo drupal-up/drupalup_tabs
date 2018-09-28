@@ -1,0 +1,16 @@
+drupalup_tabs.tabs:
+  route_name: drupalup_tabs.tabs.default
+  title: Default primary tab
+  base_route: drupalup_tabs.tabs.default
+
+drupalup_tabs.tabs_second:
+  route_name: drupalup_tabs.tabs.first
+  title: Second
+  base_route: drupalup_tabs.tabs.default
+  weight: 2
+
+drupalup_tabs.tabs_third:
+  route_name: drupalup_tabs.tabs.second
+  title: Third
+  base_route: drupalup_tabs.tabs.default
+  weight: 3

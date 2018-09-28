@@ -1,0 +1,20 @@
+drupalup_tabs.tabs.default:
+  path: '/drupalup/tabs'
+  defaults:
+    _controller: '\Drupal\drupalup_tabs\Controller\DrupalUpTabController::mainTab'
+  requirements:
+    _permission: 'access content'
+
+drupalup_tabs.tabs.first:
+  path: '/drupalup/tabs/first'
+  defaults:
+    _controller: '\Drupal\drupalup_tabs\Controller\DrupalUpTabController::subTabOne'
+  requirements:
+    _permission: 'access content'
+
+drupalup_tabs.tabs.second:
+  path: '/drupalup/tabs/second'
+  defaults:
+    _controller: '\Drupal\drupalup_tabs\Controller\DrupalUpTabController::subTabTwo'
+  requirements:
+    _permission: 'access content'
